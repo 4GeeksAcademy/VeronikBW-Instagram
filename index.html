@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar bg-body-tertiary ">
+        <div class="container-fluid d-flex justify-content-start">
+            <i class="fab fa-instagram fs-5 "></i>
+            <a class="navbar-brand text-start">Instagram</a>
+            <!-- right buttons-->
+            <div class="ms-auto">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Create a new post
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="mb-3 p-3 mb-0">
+                                <label for="exampleFormControlTextarea1" class="form-label">Example Caption</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    placeholder="Add the caption of your post here"></textarea>
+                                <div class="d-flex justify-content-start p-1">
+                                    <button type="button" class="btn btn-light ml-0 m-2">
+                                        <i class="fa-solid fa-camera"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light m-2">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- icons -->
+
+                            <!-- end icons -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                                <button type="button" class="btn btn-success">
+                                    Publish
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end modal -->
+                <div class="btn-group ms-auto">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- end right buttons -->
+            </form>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- displays buttons -->
+
+    <ul class="nav nav-pills mb-3 container-fluid justify-content-center p-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link  active bg-white text-secondary" id="pills-home-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                <i class="fa-solid fa-table-cells"></i>
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link  bg-white text-secondary" id="pills-profile-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                aria-selected="false">
+                <i class="fa-solid fa-square"></i>
+            </button>
+        </li>
+
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+            tabindex="0">
+            <!-- Grid posts -->
+            <div class="container-sm">
+                <div class="row g-3 mb-3">
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <img src="https://picsum.photos/id/24/300" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <img src="https://picsum.photos/id/237/300" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <img src="https://picsum.photos/id/26/300" class="img-fluid" alt="...">
+                    </div>
+                </div>
+                <div class="row g-3 mb-3">
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <img src="https://picsum.photos/id/12/300" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <img src="https://picsum.photos/id/66/300" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <img src="https://picsum.photos/id/85/300" class="img-fluid" alt="...">
+                    </div>
+                </div>
+                <div class="row g-3 mb-3">
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <img src="https://picsum.photos/id/201/300" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <img src="https://picsum.photos/id/44/300" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <img src="https://picsum.photos/id/87/300" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- column posts -->
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <div class="row justify-content-center mb-5">
+                <div class="card p-0" style="width: 500px;">
+                    <div class="row justify-content-between p-2">
+                        <div class="col-8 fs-2 fw-semibold">
+                            Legacy
+                        </div>
+                        <div class="col-4 text-end">
+                            08/29
+                        </div>
+                    </div>
+                    <img src="https://picsum.photos/id/24/300" class="card-img-top" alt="...">
+                    <div class="card-body p-2">
+                        <p class="card-title fw-bold p-0">102 Likes<p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, doloribus?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="card p-0" style="width: 500px;">
+                    <div class="row justify-content-between p-2">
+                        <div class="col-8 fs-2 fw-semibold">
+                            My little void
+                        </div>
+                        <div class="col-4 text-end">
+                            08/25
+                        </div>
+                    </div>
+                    <img src="https://picsum.photos/id/237/300" class="card-img-top" alt="...">
+                    <div class="card-body p-2">
+                        <p class="card-title fw-bold p-0">204 Likes<p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, doloribus?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="card p-0" style="width: 500px;">
+                    <div class="row justify-content-between p-2">
+                        <div class="col-8 fs-2 fw-semibold">
+                            My work tools
+                        </div>
+                        <div class="col-4 text-end">
+                            08/23
+                        </div>
+                    </div>
+                    <img src="https://picsum.photos/id/26/300" class="card-img-top" alt="...">
+                    <div class="card-body p-2">
+                        <p class="card-title fw-bold p-0">104 Likes<p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, doloribus?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="card p-0" style="width: 500px;">
+                    <div class="row justify-content-between p-2">
+                        <div class="col-8 fs-2 fw-semibold">
+                            Where am I??
+                        </div>
+                        <div class="col-4 text-end">
+                            08/20
+                        </div>
+                    </div>
+                    <img src="https://picsum.photos/id/12/300" class="card-img-top" alt="...">
+                    <div class="card-body p-2">
+                        <p class="card-title fw-bold p-0">245 Likes<p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, doloribus?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="card p-0" style="width: 500px;">
+                    <div class="row justify-content-between p-2">
+                        <div class="col-8 fs-2 fw-semibold">
+                            Somewhere...
+                        </div>
+                        <div class="col-4 text-end">
+                            08/19
+                        </div>
+                    </div>
+                    <img src="https://picsum.photos/id/66/300" class="card-img-top" alt="...">
+                    <div class="card-body p-2">
+                        <p class="card-title fw-bold p-0">200 Likes<p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, doloribus?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="card p-0" style="width: 500px;">
+                    <div class="row justify-content-between p-2">
+                        <div class="col-8 fs-2 fw-semibold">
+                            Visiting grandpa
+                        </div>
+                        <div class="col-4 text-end">
+                            08/15
+                        </div>
+                    </div>
+                    <img src="https://picsum.photos/id/85/300" class="card-img-top" alt="...">
+                    <div class="card-body p-2">
+                        <p class="card-title fw-bold p-0">99 Likes<p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, doloribus?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="card p-0" style="width: 500px;">
+                    <div class="row justify-content-between p-2">
+                        <div class="col-8 fs-2 fw-semibold">
+                            Working time
+                        </div>
+                        <div class="col-4 text-end">
+                            07/25
+                        </div>
+                    </div>
+                    <img src="https://picsum.photos/id/201/300" class="card-img-top" alt="...">
+                    <div class="card-body p-2">
+                        <p class="card-title fw-bold p-0">195 Likes<p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, doloribus?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="card p-0" style="width: 500px;">
+                    <div class="row justify-content-between p-2">
+                        <div class="col-8 fs-2 fw-semibold">
+                            TBT
+                        </div>
+                        <div class="col-4 text-end">
+                            07/20
+                        </div>
+                    </div>
+                    <img src="https://picsum.photos/id/44/300" class="card-img-top" alt="...">
+                    <div class="card-body p-2">
+                        <p class="card-title fw-bold p-0">152 Likes<p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, doloribus?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="card p-0" style="width: 500px;">
+                    <div class="row justify-content-between p-2">
+                        <div class="col-8 fs-2 fw-semibold">
+                            Somewhere in the world
+                        </div>
+                        <div class="col-4 text-end">
+                            06/30
+                        </div>
+                    </div>
+                    <img src="https://picsum.photos/id/87/300" class="card-img-top" alt="...">
+                    <div class="card-body p-2">
+                        <p class="card-title fw-bold p-0">201 Likes<p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, doloribus?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <!-- end displays buttons -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
